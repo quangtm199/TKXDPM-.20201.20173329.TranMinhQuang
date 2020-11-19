@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1368.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="111.0" prefWidth="1366.0" style="-fx-background-color: pink;">
+         <children>
+            <Pane prefHeight="111.0" prefWidth="291.0">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="144.0" layoutX="17.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Gluon_Reverse_Blue2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="111.0" prefWidth="850.0">
+               <children>
+                  <TextField layoutX="14.0" layoutY="35.0" prefHeight="49.0" prefWidth="305.0" />
+                  <SplitMenuButton layoutX="332.0" layoutY="43.0" mnemonicParsing="false" text="Search">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                  </SplitMenuButton>
+               </children>
+            </Pane>
+            <Pane prefHeight="111.0" prefWidth="280.0">
+               <children>
+                  <ImageView fitHeight="64.0" fitWidth="75.0" layoutX="100.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cart.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="41.0" layoutY="15.0" text="0 media" textFill="#270d8f">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <GridPane accessibleText="Add to cart" layoutX="18.0" layoutY="118.0" prefHeight="653.0" prefWidth="1356.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Pane layoutY="22.0" prefHeight="176.0" prefWidth="170.0">
+                     <children>
+                        <ImageView fitHeight="135.0" fitWidth="170.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@books_1200.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label layoutX="224.0" prefHeight="25.0" prefWidth="53.0" text="BOOK">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="198.0" layoutY="31.0" prefHeight="173.0" prefWidth="100.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label layoutX="6.0" layoutY="14.0" text="Price">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="45.0" text="Avail">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Spinner accessibleText="1" editable="true" layoutX="1.0" layoutY="93.0" prefHeight="25.0" prefWidth="76.0" />
+                        <Button accessibleText="Add to Cart" layoutX="8.0" layoutY="130.0" mnemonicParsing="false" text="Add to cart">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="50.0" layoutY="15.0" text="100" />
+                        <Label layoutX="53.0" layoutY="45.0" text="20" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <Pane layoutY="22.0" prefHeight="179.0" prefWidth="115.0" />
+                  <Label layoutX="236.0" layoutY="5.0" prefHeight="25.0" prefWidth="53.0" text="BOOK">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="213.0" layoutY="26.0" prefHeight="187.0" prefWidth="100.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label layoutX="6.0" layoutY="14.0" text="Price">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="45.0" text="Avail">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Spinner accessibleText="1" editable="true" layoutX="2.0" layoutY="85.0" prefHeight="25.0" prefWidth="75.0" />
+                        <Button accessibleText="Add to Cart" layoutX="8.0" layoutY="130.0" mnemonicParsing="false" text="Add to cart">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="50.0" layoutY="15.0" text="100" />
+                        <Label layoutX="53.0" layoutY="45.0" text="20" />
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="158.0" fitWidth="194.0" layoutX="26.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bok4.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <Pane layoutX="22.0" layoutY="22.0" prefHeight="179.0" prefWidth="115.0">
+                     <children>
+                        <ImageView fitHeight="174.0" fitWidth="153.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@bok3.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label layoutX="235.0" layoutY="8.0" prefHeight="25.0" prefWidth="53.0" text="BOOK">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="204.0" layoutY="28.0" prefHeight="173.0" prefWidth="100.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label layoutX="6.0" layoutY="14.0" text="Price">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="45.0" text="Avail">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Spinner accessibleText="1" editable="true" layoutX="2.0" layoutY="85.0" prefHeight="25.0" prefWidth="75.0" />
+                        <Button accessibleText="Add to Cart" layoutX="8.0" layoutY="130.0" mnemonicParsing="false" text="Add to cart">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="50.0" layoutY="15.0" text="100" />
+                        <Label layoutX="53.0" layoutY="45.0" text="20" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Pane layoutY="22.0" prefHeight="179.0" prefWidth="153.0">
+                     <children>
+                        <ImageView fitHeight="181.0" fitWidth="163.0" layoutX="15.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@bok6.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label layoutX="220.0" layoutY="1.0" prefHeight="25.0" prefWidth="53.0" text="BOOK">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="195.0" layoutY="30.0" prefHeight="173.0" prefWidth="107.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label layoutX="6.0" layoutY="14.0" text="Price">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="45.0" text="Avail">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Spinner accessibleText="1" editable="true" layoutX="2.0" layoutY="85.0" prefHeight="25.0" prefWidth="75.0" />
+                        <Button accessibleText="Add to Cart" layoutX="8.0" layoutY="130.0" mnemonicParsing="false" text="Add to cart">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="50.0" layoutY="15.0" text="100" />
+                        <Label layoutX="53.0" layoutY="45.0" text="20" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
+               <children>
+                  <Pane layoutX="22.0" layoutY="22.0" prefHeight="179.0" prefWidth="115.0">
+                     <children>
+                        <ImageView fitHeight="174.0" fitWidth="153.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@bok3.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label layoutX="235.0" layoutY="8.0" prefHeight="25.0" prefWidth="53.0" text="BOOK">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="204.0" layoutY="28.0" prefHeight="173.0" prefWidth="100.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label layoutX="6.0" layoutY="14.0" text="Price">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="45.0" text="Avail">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Spinner accessibleText="1" editable="true" layoutX="2.0" layoutY="85.0" prefHeight="25.0" prefWidth="75.0" />
+                        <Button accessibleText="Add to Cart" layoutX="8.0" layoutY="130.0" mnemonicParsing="false" text="Add to cart">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="50.0" layoutY="15.0" text="100" />
+                        <Label layoutX="53.0" layoutY="45.0" text="20" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Pane layoutX="22.0" layoutY="22.0" prefHeight="179.0" prefWidth="115.0">
+                     <children>
+                        <ImageView fitHeight="174.0" fitWidth="153.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@bok3.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label layoutX="235.0" layoutY="8.0" prefHeight="25.0" prefWidth="53.0" text="BOOK">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="204.0" layoutY="28.0" prefHeight="173.0" prefWidth="100.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label layoutX="6.0" layoutY="14.0" text="Price">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="45.0" text="Avail">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Spinner accessibleText="1" editable="true" layoutX="2.0" layoutY="85.0" prefHeight="25.0" prefWidth="75.0" />
+                        <Button accessibleText="Add to Cart" layoutX="8.0" layoutY="130.0" mnemonicParsing="false" text="Add to cart">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="50.0" layoutY="15.0" text="100" />
+                        <Label layoutX="53.0" layoutY="45.0" text="20" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Pane layoutX="22.0" layoutY="22.0" prefHeight="179.0" prefWidth="115.0">
+                     <children>
+                        <ImageView fitHeight="174.0" fitWidth="153.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@bok3.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label layoutX="235.0" layoutY="8.0" prefHeight="25.0" prefWidth="53.0" text="BOOK">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="204.0" layoutY="28.0" prefHeight="173.0" prefWidth="100.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label layoutX="6.0" layoutY="14.0" text="Price">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="45.0" text="Avail">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Spinner accessibleText="1" editable="true" layoutX="2.0" layoutY="85.0" prefHeight="25.0" prefWidth="75.0" />
+                        <Button accessibleText="Add to Cart" layoutX="8.0" layoutY="130.0" mnemonicParsing="false" text="Add to cart">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="50.0" layoutY="15.0" text="100" />
+                        <Label layoutX="53.0" layoutY="45.0" text="20" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <children>
+                  <Pane layoutX="22.0" layoutY="22.0" prefHeight="179.0" prefWidth="115.0">
+                     <children>
+                        <ImageView fitHeight="174.0" fitWidth="153.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@bok3.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label layoutX="235.0" layoutY="8.0" prefHeight="25.0" prefWidth="53.0" text="BOOK">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="204.0" layoutY="28.0" prefHeight="173.0" prefWidth="100.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label layoutX="6.0" layoutY="14.0" text="Price">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="45.0" text="Avail">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Spinner accessibleText="1" editable="true" layoutX="2.0" layoutY="85.0" prefHeight="25.0" prefWidth="75.0" />
+                        <Button accessibleText="Add to Cart" layoutX="8.0" layoutY="130.0" mnemonicParsing="false" text="Add to cart">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="50.0" layoutY="15.0" text="100" />
+                        <Label layoutX="53.0" layoutY="45.0" text="20" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Pane layoutX="22.0" layoutY="22.0" prefHeight="179.0" prefWidth="115.0">
+                     <children>
+                        <ImageView fitHeight="174.0" fitWidth="153.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@bok3.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label layoutX="235.0" layoutY="8.0" prefHeight="25.0" prefWidth="53.0" text="BOOK">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="204.0" layoutY="28.0" prefHeight="173.0" prefWidth="100.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label layoutX="6.0" layoutY="14.0" text="Price">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="45.0" text="Avail">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Spinner accessibleText="1" editable="true" layoutX="2.0" layoutY="85.0" prefHeight="25.0" prefWidth="75.0" />
+                        <Button accessibleText="Add to Cart" layoutX="8.0" layoutY="130.0" mnemonicParsing="false" text="Add to cart">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="50.0" layoutY="15.0" text="100" />
+                        <Label layoutX="53.0" layoutY="45.0" text="20" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Pane layoutX="22.0" layoutY="22.0" prefHeight="179.0" prefWidth="115.0">
+                     <children>
+                        <ImageView fitHeight="174.0" fitWidth="153.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@bok3.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label layoutX="235.0" layoutY="8.0" prefHeight="25.0" prefWidth="53.0" text="BOOK">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="204.0" layoutY="28.0" prefHeight="173.0" prefWidth="100.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label layoutX="6.0" layoutY="14.0" text="Price">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="45.0" text="Avail">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Spinner accessibleText="1" editable="true" layoutX="2.0" layoutY="85.0" prefHeight="25.0" prefWidth="75.0" />
+                        <Button accessibleText="Add to Cart" layoutX="8.0" layoutY="130.0" mnemonicParsing="false" text="Add to cart">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="50.0" layoutY="15.0" text="100" />
+                        <Label layoutX="53.0" layoutY="45.0" text="20" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Pane layoutX="22.0" layoutY="22.0" prefHeight="179.0" prefWidth="115.0">
+                     <children>
+                        <ImageView fitHeight="174.0" fitWidth="153.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@bok3.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label layoutX="235.0" layoutY="8.0" prefHeight="25.0" prefWidth="53.0" text="BOOK">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="204.0" layoutY="28.0" prefHeight="173.0" prefWidth="100.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label layoutX="6.0" layoutY="14.0" text="Price">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="45.0" text="Avail">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Spinner accessibleText="1" editable="true" layoutX="2.0" layoutY="85.0" prefHeight="25.0" prefWidth="75.0" />
+                        <Button accessibleText="Add to Cart" layoutX="8.0" layoutY="130.0" mnemonicParsing="false" text="Add to cart">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="50.0" layoutY="15.0" text="100" />
+                        <Label layoutX="53.0" layoutY="45.0" text="20" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <children>
+                  <Pane layoutX="22.0" layoutY="22.0" prefHeight="179.0" prefWidth="115.0">
+                     <children>
+                        <ImageView fitHeight="174.0" fitWidth="153.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@bok3.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label layoutX="235.0" layoutY="8.0" prefHeight="25.0" prefWidth="53.0" text="BOOK">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="204.0" layoutY="28.0" prefHeight="173.0" prefWidth="100.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label layoutX="6.0" layoutY="14.0" text="Price">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="45.0" text="Avail">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Spinner accessibleText="1" editable="true" layoutX="2.0" layoutY="85.0" prefHeight="25.0" prefWidth="75.0" />
+                        <Button accessibleText="Add to Cart" layoutX="8.0" layoutY="130.0" mnemonicParsing="false" text="Add to cart">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="50.0" layoutY="15.0" text="100" />
+                        <Label layoutX="53.0" layoutY="45.0" text="20" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
